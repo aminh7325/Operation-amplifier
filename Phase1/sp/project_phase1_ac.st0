@@ -1,0 +1,57 @@
+***** HSPICE -- D-2010.03-SP1 32-BIT (May 26 2010) winnt ******
+ Input File: d:\electrical course\t5\prelec\project\sp\project_phase1_ac.sp
+ lic:
+ lic: FLEXlm: v8.5b
+ lic: USER:   M.Amin               HOSTNAME: DESKTOP-QPS973P
+ lic: HOSTID: "0862661f051d 40e230cb1c34 00ff5ed341cb 00ffd8d4b75b 00ff6d5e4c7a
+ lic: Using FLEXlm license file:
+ lic: 27000@elena
+ lic: Checkout 1 hspice
+ lic: License/Maintenance for hspice will expire on 31-dec-2020/2007.9
+ lic: NODE LOCKED license on hostid "0862661f051d 40e230cb1c34 00ff5ed341cb 00ff
+ lic:
+ init: begin read circuit files,  cpu clock=  6.90E-02
+       option search   = C:\synopsys\Hspice_D-2010.03-SP1\PARTS\behave\
+       option search   = C:\synopsys\Hspice_D-2010.03-SP1\PARTS\AD\
+       option search   = C:\synopsys\Hspice_D-2010.03-SP1\PARTS\XILINX\
+       option search   = C:\synopsys\Hspice_D-2010.03-SP1\PARTS\TLINE\
+       option search   = C:\synopsys\Hspice_D-2010.03-SP1\PARTS\TI\
+       option search   = C:\synopsys\Hspice_D-2010.03-SP1\PARTS\SIGNET\
+       option search   = C:\synopsys\Hspice_D-2010.03-SP1\PARTS\PCI\
+       option search   = C:\synopsys\Hspice_D-2010.03-SP1\PARTS\LIN_TECH\
+       option search   = C:\synopsys\Hspice_D-2010.03-SP1\PARTS\FET\
+       option search   = C:\synopsys\Hspice_D-2010.03-SP1\PARTS\DIO\
+       option search   = C:\synopsys\Hspice_D-2010.03-SP1\PARTS\COMLINE\
+       option search   = C:\synopsys\Hspice_D-2010.03-SP1\PARTS\BURR_BRN\
+       option search   = C:\synopsys\Hspice_D-2010.03-SP1\PARTS\BJT\
+       option search   = C:\synopsys\Hspice_D-2010.03-SP1\PARTS\behave\
+       option search   = C:\synopsys\Hspice_D-2010.03-SP1\PARTS\AD\
+       option post     =     2.00
+       option runlvl
+       option accura   =     1.00
+       option gmin     =    1.000E-09
+ init: end read circuit files,  cpu clock=  1.24E-01 memory=    153 kb
+ init: begin check errors,  cpu clock=  1.24E-01
+ init: end check errors,  cpu clock=  1.33E-01 memory=    156 kb
+ init: begin setup matrix, pivot=     0 cpu clock=  1.33E-01
+       establish matrix -- done,  cpu clock=  1.41E-01 memory=    167 kb
+       re-order matrix -- done,  cpu clock=  1.46E-01 memory=    172 kb
+ init: end setup matrix,  cpu clock=  1.50E-01 memory=    193 kb
+ dcop: begin dcop,  cpu clock=  1.53E-01
+ dcop: end dcop,  cpu clock=  1.58E-01 memory=    193 kb  tot_iter=      16
+ output: d:\electrical course\t5\prelec\project\sp\project_phase1_ac.ac0
+ sweep: ac ac0    begin, #sweeps= 201 cpu clock=  1.66E-01
+ ac: frequency=    1.06E+03
+ ac: frequency=    3.16E+03
+ ac: frequency=    1.00E+04
+ ac: frequency=    3.16E+04
+ ac: frequency=    1.00E+05
+ ac: frequency=    3.16E+05
+ ac: frequency=    1.00E+06
+ ac: frequency=    3.16E+06
+ ac: frequency=    1.00E+07
+ ac: frequency=    3.16E+07
+ ac: frequency=    1.00E+08
+ sweep: ac ac0    end,  cpu clock=  2.28E-01 memory=    199 kb
+>info:         ***** hspice job concluded
+ lic: Release hspice token(s)

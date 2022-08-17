@@ -1,0 +1,34 @@
+* "simulator" "HSPICE" 
+* "version" "D-2010.03-SP1 32-BIT"
+* "format" "HSP"
+* "rundate" "19:06:36 12/20/2020 "
+* "netlist" "d:\electrical course\t5\prelec\project\sp\project_phase1_ac.sp "
+* "runtitle" "project:phase1"
+* time =    0.            
+* temperature =   25.0000        
+*** BEGIN: Saved Operating Point ***                     
+.option 
++ gmindc=   1.0000p       
+.nodeset
++ 10 = -65.6269u       
++ 11 = -65.6269u       
++ 100 =   0.            
++ 101 = -65.6269u       
++ 102 = -65.6269u       
++ vb15 =  -1.7311        
++ vb3 =-572.4861m       
++ vb4 =-572.4533m       
++ vb5 =  -1.7726        
++ vb7 =  -1.7548        
++ vc14 = -65.6269u       
++ vc3 =  17.2585m       
++ vc4 =  15.6605m       
++ vc8 =   1.7741        
++ vc9 =   1.7299        
++ vcc =   2.5000        
++ ve3 =  -1.2818        
++ ve8 =-710.4972m       
++ vee =  -2.5000        
++ vi1 = -65.6269u       
++ vi2 =   0.            
+***   END: Saved Operating Point ***                     

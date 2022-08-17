@@ -1,0 +1,516 @@
+ ****** HSPICE -- D-2010.03-SP1 32-BIT (May 26 2010) winnt ******               
+  Copyright (C) 2010 Synopsys, Inc. All Rights Reserved.                        
+  Unpublished-rights reserved under US copyright laws.
+  This program is protected by law and is subject to the 
+  terms and conditions of the license agreement from Synopsys.
+  Use of this program is your acceptance to be bound by the 
+  license agreement. HSPICE is the trademark of Synopsys, Inc.
+  Input File: d:\electrical course\t5\prelec\project\sp\project_phase1_ac.sp    
+  lic:  
+  lic: FLEXlm: v8.5b 
+  lic: USER:   M.Amin               HOSTNAME: DESKTOP-QPS973P 
+  lic: HOSTID: "0862661f051d 40e230cb1c34 00ff5ed341cb 00ffd8d4b75b 00ff6d5e4c7a
+  
+  lic: Using FLEXlm license file: 
+  lic: 27000@elena 
+  lic: Checkout 1 hspice 
+  lic: License/Maintenance for hspice will expire on 31-dec-2020/2007.9 
+  lic: NODE LOCKED license on hostid "0862661f051d 40e230cb1c34 00ff5ed341cb 00f
+ f
+  lic:   
+ Init: read install configuration file: C:\synopsys\Hspice_D-2010.03-SP1\meta.cfg
+1****** HSPICE -- D-2010.03-SP1 32-BIT (May 26 2010) winnt ******               
+ ******  
+ project:phase1
+
+  ******  bjt   model parameters tnom=  25.000 temp=  25.000 *****
+
+ ************************************************************************
+ *** bjt model parameters   model name:   0:bc107n   model type:npn   ***
+ ************************************************************************
+
+     names  values   units     names  values   units     names  values   units
+     -----  ------   -----     -----  ------   -----     -----  ------   -----
+
+   1*** basic dc parameters ***
+    level=   1.00                bf= 200.00                br=   1.00         
+      brs=   0.                bulk=  gnd                  is= 1.0e-16 amps   
+      iss=   0.    amps          nf=   1.00                nr=   1.00         
+       ns=   1.00               ibe=   0.    amps         ibc=   0.    amps   
+     subs=   1.00             expli=   0.    amps   
+
+   2*** low current beta degradation effect parameters ***
+      isc=   0.    amps         ise=   0.    amps          nc=   2.00         
+       ne=   1.50         
+
+   3*** base width modulation parameters ***
+      vaf= 100.00  volts        var=   0.    volts  
+
+   4*** high current beta degradation effect parameters ***
+      ikf=   0.    amps         nkf= 500.00m              ikr=   0.    amps   
+
+   5*** parasitic resistor parameters ***
+      irb=   0.    amps          rb= 100.00  ohms         rbm= 100.00  ohms   
+       re=   0.    ohms          rc=   0.    ohms         rcc=   0.    ohms   
+       vo=   0.    volts      gamma=   0.           
+
+   6*** junction capacitor parameters ***
+     cbcp=   0.    farad       cbep=   0.    farad       ccsp=   0.    farad  
+      cjc=   2.00p farad        cje=   3.00p farad        cjs=   2.00p farad  
+       fc= 500.00m              mjc= 330.00m              mje= 330.00m        
+      mjs= 500.00m              vjc= 750.00m volts        vje= 750.00m volts  
+      vjs= 750.00m volts       xcjc=   1.00               qco=   0.    coul   
+
+   7*** transit time parameters ***
+      itf=   0.    amps         ptf=   0.    deg k         tf= 300.00p secs   
+       tr=   6.00n secs         vtf=   0.                 xtf=   0.           
+
+   8*** temperature compensation parameters ***
+     tlev=   0.               tlevc=   0.                tre1=   0.    /deg   
+     tre2=   0.    /deg2       trb1=   0.    /deg        trc1=   0.    /deg   
+     trb2=   0.    /deg2       trm1=   0.    /deg         xtb=   0.           
+     trm2=   0.    /deg2        xti=   3.00               cte=   0.    /deg   
+      ctc=   0.    /deg         cts=   0.    /deg        trc2=   0.    /deg2  
+     tref=  25.00   deg c       bex=   2.42              bexv=   1.90         
+
+   9*** noise parameters ***
+       kf=   0.                  af=   1.00         
+
+ ************************************************************************
+ *** bjt model parameters   model name:   0:bc107p   model type:pnp   ***
+ ************************************************************************
+
+     names  values   units     names  values   units     names  values   units
+     -----  ------   -----     -----  ------   -----     -----  ------   -----
+
+   1*** basic dc parameters ***
+    level=   1.00                bf=  50.00                br=   1.00         
+      brs=   0.                bulk=  gnd                  is= 1.0e-16 amps   
+      iss=   0.    amps          nf=   1.00                nr=   1.00         
+       ns=   1.00               ibe=   0.    amps         ibc=   0.    amps   
+     subs=  -1.00             expli=   0.    amps   
+
+   2*** low current beta degradation effect parameters ***
+      isc=   0.    amps         ise=   0.    amps          nc=   2.00         
+       ne=   1.50         
+
+   3*** base width modulation parameters ***
+      vaf=  70.00  volts        var=   0.    volts  
+
+   4*** high current beta degradation effect parameters ***
+      ikf=   0.    amps         nkf= 500.00m              ikr=   0.    amps   
+
+   5*** parasitic resistor parameters ***
+      irb=   0.    amps          rb= 100.00  ohms         rbm= 100.00  ohms   
+       re=   0.    ohms          rc=   0.    ohms         rcc=   0.    ohms   
+       vo=   0.    volts      gamma=   0.           
+
+   6*** junction capacitor parameters ***
+     cbcp=   0.    farad       cbep=   0.    farad       ccsp=   0.    farad  
+      cjc=   2.00p farad        cje=   3.00p farad        cjs=   2.00p farad  
+       fc= 500.00m              mjc= 330.00m              mje= 330.00m        
+      mjs= 500.00m              vjc= 750.00m volts        vje= 750.00m volts  
+      vjs= 750.00m volts       xcjc=   1.00               qco=   0.    coul   
+
+   7*** transit time parameters ***
+      itf=   0.    amps         ptf=   0.    deg k         tf= 300.00p secs   
+       tr=   6.00n secs         vtf=   0.                 xtf=   0.           
+
+   8*** temperature compensation parameters ***
+     tlev=   0.               tlevc=   0.                tre1=   0.    /deg   
+     tre2=   0.    /deg2       trb1=   0.    /deg        trc1=   0.    /deg   
+     trb2=   0.    /deg2       trm1=   0.    /deg         xtb=   0.           
+     trm2=   0.    /deg2        xti=   3.00               cte=   0.    /deg   
+      ctc=   0.    /deg         cts=   0.    /deg        trc2=   0.    /deg2  
+     tref=  25.00   deg c       bex=   2.42              bexv=   1.90         
+
+   9*** noise parameters ***
+       kf=   0.                  af=   1.00         
+  **warning** (d:\electrical course\t5\prelec\project\sp\project_phase1_ac.sp:92) Capacitance of     1.00     for cx is too high. Please verify capacitance value.
+ 
+      
+ *****************************************************************
+ ******  option summary
+ ******
+ runlvl  = 5         bypass  = 2         
+1****** HSPICE -- D-2010.03-SP1 32-BIT (May 26 2010) winnt ******               
+ ******  
+ project:phase1
+
+  ******  operating point information tnom=  25.000 temp=  25.000 *****
+ ***** operating point status is all       simulation time is     0.     
+    node    =voltage      node    =voltage      node    =voltage
+
+ +0:10      = -65.6269u 0:11      = -65.6269u 0:100     =   0.     
+ +0:101     = -65.6269u 0:102     = -65.6269u 0:vb15    =  -1.7311 
+ +0:vb3     =-572.4861m 0:vb4     =-572.4533m 0:vb5     =  -1.7726 
+ +0:vb7     =  -1.7548  0:vc14    = -65.6269u 0:vc3     =  17.2585m
+ +0:vc4     =  15.6605m 0:vc8     =   1.7741  0:vc9     =   1.7299 
+ +0:vcc     =   2.5000  0:ve3     =  -1.2818  0:ve8     =-710.4972m
+ +0:vee     =  -2.5000  0:vi1     = -65.6269u 0:vi2     =   0.     
+
+
+ ****  voltage sources
+
+ subckt                                              
+ element  0:vcc      0:vee      0:vi       0:vb      
+  volts      2.5000    -2.5000     0.         0.     
+  current   -3.1633m    3.1633m    0.        -2.3703n
+  power      7.9083m    7.9083m    0.         0.     
+
+     total voltage source power dissipation=   15.8165m       watts
+
+
+
+ **** resistors
+
+ subckt                                                                    
+ element  0:r1       0:r2       0:r3       0:r5       0:r6       0:rx      
+  r value   25.0000k   25.0000k   21.5000k   10.7500k    4.3000k  100.0000x
+  v drop     2.4827     2.4843     4.2726     4.2548     4.2311     0.     
+  current   99.3097u   99.3736u  198.7266u  395.7975u  983.9846u    0.     
+  power    246.5602u  246.8777u  849.0834u    1.6840m    4.1634m    0.     
+
+
+ **** voltage-controlled voltage sources
+
+
+ subckt                                              
+ element  0:ein1     0:ein2     0:e3       0:e4      
+  volts      0.         0.       -65.6269u  -65.6269u
+  current   -2.3703n   -2.3733n    0.        -2.3703n
+
+
+
+
+ **** bipolar junction transistors
+
+
+ subckt                                                                    
+ element  0:q1       0:q2       0:q3       0:q4       0:q5       0:q6      
+ model    0:bc107n   0:bc107n   0:bc107n   0:bc107n   0:bc107n   0:bc107n  
+  ib         2.3722n    2.3752n  488.6748n  489.2985n  983.7939n  983.7939n
+  ic       486.3021n  486.9228n   98.3114u   98.4353u  197.7246u  196.7590u
+  vbe      572.4205m  572.4533m  709.3521m  709.3850m  727.3787m  727.3787m
+  vce        3.0725     3.0725     1.2991     1.2975     1.2182   727.3787m
+  vbc       -2.5001    -2.5000  -589.7446m -588.1138m -490.7830m    0.     
+  vs        -2.5000    -2.5000   -17.2585m  -15.6605m    1.2818     1.7726 
+  power      1.4955u    1.4974u  128.0626u  128.0668u  241.5762u  143.8339u
+  betad    205.0001   205.0000   201.1796   201.1763   200.9818   200.0002 
+  gm        18.9235u   18.9477u    3.8256m    3.8304m    7.6940m    7.6565m
+  rpi       10.8304x   10.8166x   52.5745k   52.5075k   26.1151k   26.1151k
+  rx       100.0000   100.0000   100.0000   100.0000   100.0000   100.0000 
+  ro       210.7745x  210.5056x    1.0232x    1.0219x  508.2365k  508.2365k
+  cpi        3.7613p    3.7613p    5.0842p    5.0857p    6.2688p    6.2575p
+  cmu        1.2328p    1.2328p    1.6515p    1.6522p    1.6938p    1.9999p
+  cbx        0.         0.         0.         0.         0.         0.     
+  ccs      960.7689f  960.7689f    1.9774p    1.9794p    3.7091p    4.3635p
+  betaac   204.9487   204.9486   201.1282   201.1249   200.9304   199.9488 
+  ft       603.0751k  603.8378k   90.3924x   90.4774x  153.7862x  147.5713x
+
+
+
+ subckt                                                                    
+ element  0:q7       0:q8       0:q9       0:q10      0:q11      0:q17     
+ model    0:bc107n   0:bc107n   0:bc107n   0:bc107p   0:bc107p   0:bc107n  
+  ib         1.9594u  938.2982n  998.2765n   -3.6723u   -3.6723u    1.9594u
+  ic       395.9712u  190.9598u  203.0748u -183.6152u -183.7313u  391.8787u
+  vbe      745.1773m  726.1577m  727.7556m -725.8712m -725.8712m  745.1773m
+  vce        1.7895     2.4846     2.4404  -725.8712m -770.1265m  745.1773m
+  vbc       -1.0443    -1.7585    -1.7126     0.        44.2553m    0.     
+  vs       710.4972m   -1.7741    -1.7299    -1.7745    -1.7745     1.7548 
+  power    710.0516u  475.1449u  496.3044u  135.9466u  144.1619u  293.4792u
+  betad    202.0890   203.5171   203.4254    50.0003    50.0319   200.0004 
+  gm        15.4084m    7.4308m    7.9023m    7.1442m    7.1487m   15.2491m
+  rpi       13.1122k   27.3813k   25.7362k    6.9961k    6.9961k   13.1122k
+  rx       100.0000   100.0000   100.0000   100.0000   100.0000   100.0000 
+  ro       255.1815k  532.8796k  500.8632k  381.2341k  381.2341k  255.1815k
+  cpi        8.6071p    6.1882p    6.3318p    6.1017p    6.1031p    8.5593p
+  cmu        1.4997p    1.3427p    1.3509p    1.9997p    1.9622p    1.9998p
+  cbx        0.         0.         0.         0.         0.         0.     
+  ccs        2.9473p    1.0902p    1.0999p    1.0901p    1.0901p    4.3398p
+  betaac   202.0377   203.4657   203.3740    49.9819    50.0135   199.9490 
+  ft       242.6423x  157.0389x  163.7030x  140.3507x  141.0681x  229.8462x
+
+
+
+ subckt                                   
+ element  0:q14      0:q15      0:q16     
+ model    0:bc107p   0:bc107n   0:bc107n  
+  ib       -19.3436u    4.8712u    4.8712u
+  ic      -991.1070u  991.1070u  974.2422u
+  vbe     -770.1265m  768.8661m  768.8661m
+  vce       -2.5001     2.4999   768.8661m
+  vbc        1.7299    -1.7311     0.     
+  vs        -1.7318    65.6269u    1.7311 
+  power      2.4927m    2.4814m  752.8071u
+  betad     51.2371   203.4631   200.0010 
+  gm        38.5629m   38.5670m   37.9105m
+  rpi        1.3282k    5.2742k    5.2742k
+  rx       100.0000   100.0000   100.0000 
+  ro        72.3755k  102.6444k  102.6444k
+  cpi       15.5870p   15.5873p   15.3903p
+  cmu        1.3475p    1.3475p    1.9996p
+  cbx        0.         0.         0.     
+  ccs        1.0995p    2.0001p    4.3082p
+  betaac    51.2187   203.4117   199.9496 
+  ft       362.4242x  362.4560x  346.9626x
+
+
+
+ ******  
+ project:phase1
+
+  ******  ac analysis tnom=  25.000 temp=  25.000 *****
+x
+
+        freq       gain    
+                           
+    1.00000k    393.5626k  
+    1.05925k    393.5438k  
+    1.12202k    393.5228k  
+    1.18850k    393.4992k  
+    1.25893k    393.4727k  
+    1.33352k    393.4430k  
+    1.41254k    393.4096k  
+    1.49624k    393.3722k  
+    1.58489k    393.3303k  
+    1.67880k    393.2832k  
+    1.77828k    393.2304k  
+    1.88365k    393.1712k  
+    1.99526k    393.1048k  
+    2.11349k    393.0303k  
+    2.23872k    392.9468k  
+    2.37137k    392.8531k  
+    2.51189k    392.7480k  
+    2.66073k    392.6302k  
+    2.81838k    392.4981k  
+    2.98538k    392.3501k  
+    3.16228k    392.1840k  
+    3.34965k    391.9980k  
+    3.54813k    391.7894k  
+    3.75837k    391.5557k  
+    3.98107k    391.2939k  
+    4.21697k    391.0006k  
+    4.46684k    390.6720k  
+    4.73151k    390.3042k  
+    5.01187k    389.8923k  
+    5.30884k    389.4313k  
+    5.62341k    388.9155k  
+    5.95662k    388.3386k  
+    6.30957k    387.6935k  
+    6.68344k    386.9726k  
+    7.07946k    386.1672k  
+    7.49894k    385.2680k  
+    7.94328k    384.2646k  
+    8.41395k    383.1455k  
+    8.91251k    381.8986k  
+    9.44061k    380.5101k  
+   10.00000k    378.9655k  
+   10.59254k    377.2487k  
+   11.22018k    375.3429k  
+   11.88502k    373.2297k  
+   12.58925k    370.8897k  
+   13.33521k    368.3023k  
+   14.12538k    365.4462k  
+   14.96236k    362.2990k  
+   15.84893k    358.8379k  
+   16.78804k    355.0398k  
+   17.78279k    350.8818k  
+   18.83649k    346.3414k  
+   19.95262k    341.3972k  
+   21.13489k    336.0296k  
+   22.38721k    330.2212k  
+   23.71374k    323.9580k  
+   25.11886k    317.2295k  
+   26.60725k    310.0301k  
+   28.18383k    302.3595k  
+   29.85383k    294.2235k  
+   31.62278k    285.6346k  
+   33.49654k    276.6125k  
+   35.48134k    267.1841k  
+   37.58374k    257.3839k  
+   39.81072k    247.2532k  
+   42.16965k    236.8403k  
+   44.66836k    226.1994k  
+   47.31513k    215.3893k  
+   50.11872k    204.4728k  
+   53.08844k    193.5150k  
+   56.23413k    182.5817k  
+   59.56621k    171.7381k  
+   63.09573k    161.0476k  
+   66.83439k    150.5698k  
+   70.79458k    140.3597k  
+   74.98942k    130.4667k  
+   79.43282k    120.9338k  
+   84.13951k    111.7967k  
+   89.12509k    103.0843k  
+   94.40609k     94.8178k  
+  100.00000k     87.0116k  
+  105.92537k     79.6733k  
+  112.20185k     72.8043k  
+  118.85022k     66.4005k  
+  125.89254k     60.4531k  
+  133.35214k     54.9492k  
+  141.25375k     49.8726k  
+  149.62357k     45.2045k  
+  158.48932k     40.9242k  
+  167.88040k     37.0100k  
+  177.82794k     33.4391k  
+  188.36491k     30.1886k  
+  199.52623k     27.2358k  
+  211.34890k     24.5584k  
+  223.87211k     22.1347k  
+  237.13737k     19.9440k  
+  251.18864k     17.9666k  
+  266.07251k     16.1839k  
+  281.83829k     14.5785k  
+  298.53826k     13.1342k  
+  316.22777k     11.8359k  
+  334.96544k     10.6696k  
+  354.81339k      9.6227k  
+  375.83740k      8.6834k  
+  398.10717k      7.8409k  
+  421.69650k      7.0856k  
+  446.68359k      6.4086k  
+  473.15126k      5.8018k  
+  501.18723k      5.2579k  
+  530.88444k      4.7705k  
+  562.34133k      4.3334k  
+  595.66214k      3.9415k  
+  630.95734k      3.5898k  
+  668.34392k      3.2741k  
+  707.94578k      2.9905k  
+  749.89421k      2.7354k  
+  794.32823k      2.5059k  
+  841.39514k      2.2991k  
+  891.25094k      2.1125k  
+  944.06088k      1.9439k  
+    1.00000x      1.7914k  
+    1.05925x      1.6531k  
+    1.12202x      1.5276k  
+    1.18850x      1.4134k  
+    1.25893x      1.3094k  
+    1.33352x      1.2144k  
+    1.41254x      1.1274k  
+    1.49624x      1.0477k  
+    1.58489x    974.4180   
+    1.67880x    906.9557   
+    1.77828x    844.7058   
+    1.88365x    787.1480   
+    1.99526x    733.8227   
+    2.11349x    684.3234   
+    2.23872x    638.2902   
+    2.37137x    595.4049   
+    2.51189x    555.3855   
+    2.66073x    517.9821   
+    2.81838x    482.9733   
+    2.98538x    450.1628   
+    3.16228x    419.3764   
+    3.34965x    390.4597   
+    3.54813x    363.2756   
+    3.75837x    337.7026   
+    3.98107x    313.6332   
+    4.21697x    290.9719   
+    4.46684x    269.6339   
+    4.73151x    249.5441   
+    5.01187x    230.6357   
+    5.30884x    212.8488   
+    5.62341x    196.1298   
+    5.95662x    180.4302   
+    6.30957x    165.7054   
+    6.68344x    151.9145   
+    7.07946x    139.0186   
+    7.49894x    126.9811   
+    7.94328x    115.7662   
+    8.41395x    105.3390   
+    8.91251x     95.6651   
+    9.44061x     86.7100   
+   10.00000x     78.4391   
+   10.59254x     70.8181   
+   11.22018x     63.8121   
+   11.88502x     57.3866   
+   12.58925x     51.5072   
+   13.33521x     46.1398   
+   14.12538x     41.2508   
+   14.96236x     36.8077   
+   15.84893x     32.7786   
+   16.78804x     29.1328   
+   17.78279x     25.8409   
+   18.83649x     22.8749   
+   19.95262x     20.2082   
+   21.13489x     17.8157   
+   22.38721x     15.6737   
+   23.71374x     13.7602   
+   25.11886x     12.0547   
+   26.60725x     10.5379   
+   28.18383x      9.1920   
+   29.85383x      8.0007   
+   31.62278x      6.9488   
+   33.49654x      6.0223   
+   35.48134x      5.2083   
+   37.58374x      4.4951   
+   39.81072x      3.8717   
+   42.16965x      3.3284   
+   44.66836x      2.8560   
+   47.31513x      2.4465   
+   50.11872x      2.0923   
+   53.08844x      1.7867   
+   56.23413x      1.5238   
+   59.56621x      1.2980   
+   63.09573x      1.1045   
+   66.83439x    939.0963m  
+   70.79458x    797.8996m  
+   74.98942x    677.5725m  
+   79.43282x    575.1726m  
+   84.13951x    488.1310m  
+   89.12509x    414.2136m  
+   94.40609x    351.4861m  
+  100.00000x    298.2799m  
+y
+
+          ***** job concluded
+1****** HSPICE -- D-2010.03-SP1 32-BIT (May 26 2010) winnt ******               
+ ******  
+ project:phase1
+
+  ******  job statistics summary tnom=  25.000 temp=  25.000 *****
+
+  ******  HSPICE Threads Information  ******
+
+  Command Line Threads Count                  :     1
+  Available CPU Count                         :     8
+  Actual Model Evaluation(Load) Threads Count :     1
+  Actual Solver Threads Count                 :     1
+
+
+  ******  Circuit Statistics  ******
+  # nodes       =      37 # elements   =      30
+  # resistors   =       6 # capacitors =       1 # inductors   =       0
+  # mutual_inds =       0 # vccs       =       0 # vcvs        =       4
+  # cccs        =       0 # ccvs       =       0 # volt_srcs   =       4
+  # curr_srcs   =       0 # diodes     =       0 # bjts        =      15
+  # jfets       =       0 # mosfets    =       0 # U elements  =       0
+  # T elements  =       0 # W elements =       0 # B elements  =       0
+  # S elements  =       0 # P elements =       0 # va device   =       0
+
+
+  ******  Runtime Statistics (seconds)  ******
+
+  analysis           time    # points   tot. iter  conv.iter
+  op point           0.01           1          16
+  ac analysis        0.06         201         201
+  readin             0.06
+  errchk             0.01
+  setup              0.02
+  output             0.00
+
+
+           total memory used          193  kbytes
+           total cpu time            0.17 seconds
+           total elapsed time        0.23 seconds
+           job started at     19:06:36 12/20/2020
+           job ended   at     19:06:36 12/20/2020
+
+
+  lic: Release hspice token(s) 

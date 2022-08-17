@@ -1,0 +1,60 @@
+* "simulator" "HSPICE" 
+* "version" "D-2010.03-SP1 32-BIT"
+* "format" "HSP"
+* "rundate" "15:28:31 02/06/2020 "
+* "netlist" "d:\electrical course\t5\prelec\phase2\sp\phase2.sp "
+* "runtitle" "project:phase2"
+* time =    0.            
+* temperature =   25.0000        
+*** BEGIN: Saved Operating Point ***                     
+.option 
++ gmindc=   1.0000p       
+.nodeset
++ 10 = -98.8021u       
++ 11 = -98.8021u       
++ 101 = -98.8021u       
++ 102 = -98.8021u       
++ 103 =   3.3000        
++ ref =   3.0036        
++ vb15 = 768.9824m       
++ vb3 =   1.9282        
++ vb4 =   1.9282        
++ vb5 = 727.4453m       
++ vb7 = 745.2646m       
++ vbpan =   3.8189        
++ vbuff =   2.4497        
++ vc14 =   3.2999        
++ vc3 =   4.5136        
++ vc4 =   4.5118        
++ vc8 =   5.2809        
++ vc9 =   5.2347        
++ vcc =   6.0073        
++ vd =   3.1343        
++ ve3 =   1.2193        
++ ve8 =   3.7849        
++ vee =   0.            
++ vepa =   3.1343        
++ vf =   3.0037        
++ vi1 =   2.4999        
++ vi2 =   2.5000        
++ vin =   8.0000        
++ vo =   6.8278        
++ vout =   0.            
++ vx =   5.1914        
++ vy = 833.9479m       
++ x_opamp.6 =-317.9724u       
++ x_opamp.7 =   7.0055        
++ x_opamp.8 =   7.0055        
++ x_opamp.9 =   0.            
++ x_opamp.10 =   2.4001        
++ x_opamp.11 =   7.9605        
++ x_opamp.12 =   7.9605        
++ x_opamp.13 =   2.4139        
++ x_opamp.14 =   2.4139        
++ x_opamp.53 =   7.0000        
++ x_opamp.54 =   1.0000        
++ x_opamp.90 =   3.5544        
++ x_opamp.91 =  40.0000        
++ x_opamp.92 = -40.0000        
++ x_opamp.99 =   4.0000        
+***   END: Saved Operating Point ***                     

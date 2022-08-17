@@ -1,0 +1,307 @@
+ ****** HSPICE -- D-2010.03-SP1 32-BIT (May 26 2010) winnt ******               
+  Copyright (C) 2010 Synopsys, Inc. All Rights Reserved.                        
+  Unpublished-rights reserved under US copyright laws.
+  This program is protected by law and is subject to the 
+  terms and conditions of the license agreement from Synopsys.
+  Use of this program is your acceptance to be bound by the 
+  license agreement. HSPICE is the trademark of Synopsys, Inc.
+  Input File: d:\electrical course\t5\prelec\project\sp\project_phase1.sp       
+  lic:  
+  lic: FLEXlm: v8.5b 
+  lic: USER:   M.Amin               HOSTNAME: DESKTOP-QPS973P 
+  lic: HOSTID: "0862661f051d 40e230cb1c34 444553544f53 00ff5ed341cb 00ffd8d4b75b
+  
+  lic: Using FLEXlm license file: 
+  lic: 27000@elena 
+  lic: Checkout 1 hspice 
+  lic: License/Maintenance for hspice will expire on 31-dec-2020/2007.9 
+  lic: NODE LOCKED license on hostid "0862661f051d 40e230cb1c34 444553544f53 00f
+ f
+  lic:   
+ Init: read install configuration file: C:\synopsys\Hspice_D-2010.03-SP1\meta.cfg
+1****** HSPICE -- D-2010.03-SP1 32-BIT (May 26 2010) winnt ******               
+ ******  
+ project:phase1
+
+  ******  bjt   model parameters tnom=  25.000 temp=  25.000 *****
+
+ ************************************************************************
+ *** bjt model parameters   model name:   0:bc107n   model type:npn   ***
+ ************************************************************************
+
+     names  values   units     names  values   units     names  values   units
+     -----  ------   -----     -----  ------   -----     -----  ------   -----
+
+   1*** basic dc parameters ***
+    level=   1.00                bf= 200.00                br=   1.00         
+      brs=   0.                bulk=  gnd                  is= 1.0e-16 amps   
+      iss=   0.    amps          nf=   1.00                nr=   1.00         
+       ns=   1.00               ibe=   0.    amps         ibc=   0.    amps   
+     subs=   1.00             expli=   0.    amps   
+
+   2*** low current beta degradation effect parameters ***
+      isc=   0.    amps         ise=   0.    amps          nc=   2.00         
+       ne=   1.50         
+
+   3*** base width modulation parameters ***
+      vaf= 100.00  volts        var=   0.    volts  
+
+   4*** high current beta degradation effect parameters ***
+      ikf=   0.    amps         nkf= 500.00m              ikr=   0.    amps   
+
+   5*** parasitic resistor parameters ***
+      irb=   0.    amps          rb= 100.00  ohms         rbm= 100.00  ohms   
+       re=   0.    ohms          rc=   0.    ohms         rcc=   0.    ohms   
+       vo=   0.    volts      gamma=   0.           
+
+   6*** junction capacitor parameters ***
+     cbcp=   0.    farad       cbep=   0.    farad       ccsp=   0.    farad  
+      cjc=   2.00p farad        cje=   3.00p farad        cjs=   2.00p farad  
+       fc= 500.00m              mjc= 330.00m              mje= 330.00m        
+      mjs= 500.00m              vjc= 750.00m volts        vje= 750.00m volts  
+      vjs= 750.00m volts       xcjc=   1.00               qco=   0.    coul   
+
+   7*** transit time parameters ***
+      itf=   0.    amps         ptf=   0.    deg k         tf= 300.00p secs   
+       tr=   6.00n secs         vtf=   0.                 xtf=   0.           
+
+   8*** temperature compensation parameters ***
+     tlev=   0.               tlevc=   0.                tre1=   0.    /deg   
+     tre2=   0.    /deg2       trb1=   0.    /deg        trc1=   0.    /deg   
+     trb2=   0.    /deg2       trm1=   0.    /deg         xtb=   0.           
+     trm2=   0.    /deg2        xti=   3.00               cte=   0.    /deg   
+      ctc=   0.    /deg         cts=   0.    /deg        trc2=   0.    /deg2  
+     tref=  25.00   deg c       bex=   2.42              bexv=   1.90         
+
+   9*** noise parameters ***
+       kf=   0.                  af=   1.00         
+
+ ************************************************************************
+ *** bjt model parameters   model name:   0:bc107p   model type:pnp   ***
+ ************************************************************************
+
+     names  values   units     names  values   units     names  values   units
+     -----  ------   -----     -----  ------   -----     -----  ------   -----
+
+   1*** basic dc parameters ***
+    level=   1.00                bf=  50.00                br=   1.00         
+      brs=   0.                bulk=  gnd                  is= 1.0e-16 amps   
+      iss=   0.    amps          nf=   1.00                nr=   1.00         
+       ns=   1.00               ibe=   0.    amps         ibc=   0.    amps   
+     subs=  -1.00             expli=   0.    amps   
+
+   2*** low current beta degradation effect parameters ***
+      isc=   0.    amps         ise=   0.    amps          nc=   2.00         
+       ne=   1.50         
+
+   3*** base width modulation parameters ***
+      vaf=  70.00  volts        var=   0.    volts  
+
+   4*** high current beta degradation effect parameters ***
+      ikf=   0.    amps         nkf= 500.00m              ikr=   0.    amps   
+
+   5*** parasitic resistor parameters ***
+      irb=   0.    amps          rb= 100.00  ohms         rbm= 100.00  ohms   
+       re=   0.    ohms          rc=   0.    ohms         rcc=   0.    ohms   
+       vo=   0.    volts      gamma=   0.           
+
+   6*** junction capacitor parameters ***
+     cbcp=   0.    farad       cbep=   0.    farad       ccsp=   0.    farad  
+      cjc=   2.00p farad        cje=   3.00p farad        cjs=   2.00p farad  
+       fc= 500.00m              mjc= 330.00m              mje= 330.00m        
+      mjs= 500.00m              vjc= 750.00m volts        vje= 750.00m volts  
+      vjs= 750.00m volts       xcjc=   1.00               qco=   0.    coul   
+
+   7*** transit time parameters ***
+      itf=   0.    amps         ptf=   0.    deg k         tf= 300.00p secs   
+       tr=   6.00n secs         vtf=   0.                 xtf=   0.           
+
+   8*** temperature compensation parameters ***
+     tlev=   0.               tlevc=   0.                tre1=   0.    /deg   
+     tre2=   0.    /deg2       trb1=   0.    /deg        trc1=   0.    /deg   
+     trb2=   0.    /deg2       trm1=   0.    /deg         xtb=   0.           
+     trm2=   0.    /deg2        xti=   3.00               cte=   0.    /deg   
+      ctc=   0.    /deg         cts=   0.    /deg        trc2=   0.    /deg2  
+     tref=  25.00   deg c       bex=   2.42              bexv=   1.90         
+
+   9*** noise parameters ***
+       kf=   0.                  af=   1.00         
+  **info** (d:\electrical course\t5\prelec\project\sp\project_phase1.sp:16) DC voltage reset to initial transient source value              in source        0:vin1                new dc=  0.2500D+01
+  **warning** (d:\electrical course\t5\prelec\project\sp\project_phase1.sp:92) Capacitance of     1.00     for cx is too high. Please verify capacitance value.
+ 
+      
+ *****************************************************************
+ ******  option summary
+ ******
+ runlvl  = 5         bypass  = 2         
+1****** HSPICE -- D-2010.03-SP1 32-BIT (May 26 2010) winnt ******               
+ ******  
+ project:phase1
+
+  ******  operating point information tnom=  25.000 temp=  25.000 *****
+ ***** operating point status is all       simulation time is     0.     
+    node    =voltage      node    =voltage      node    =voltage
+
+ +0:10      = -97.8741u 0:11      = -97.8741u 0:101     = -97.8741u
+ +0:102     = -97.8741u 0:103     =   2.5000  0:vb15    = 768.8661m
+ +0:vb3     =   1.9278  0:vb4     =   1.9279  0:vb5     = 727.3787m
+ +0:vb7     = 745.1773m 0:vc14    =   2.4999  0:vc3     =   3.7586 
+ +0:vc4     =   3.7571  0:vc8     =   4.2738  0:vc9     =   4.2299 
+ +0:vcc     =   5.0000  0:ve3     =   1.2188  0:ve8     =   3.0303 
+ +0:vee     =   0.      0:vi1     =   2.4999  0:vi2     =   2.5000 
+
+
+ ****  voltage sources
+
+ subckt                                                                    
+ element  0:vcc      0:vee      0:vin2     0:vref     0:vin1     0:vb      
+  volts      5.0000     0.         2.5000     2.5000     2.5000     0.     
+  current   -3.1682m    3.1682m   -2.3452n    0.        -2.3408n   -2.3408n
+  power     15.8408m    0.         5.8631n    0.         5.8519n    0.     
+
+     total voltage source power dissipation=   15.8409m       watts
+
+
+
+ **** resistors
+
+ subckt                                                                    
+ element  0:r1       0:r2       0:r3       0:r5       0:r6       0:rx      
+  r value   12.5000k   12.5000k   21.5000k   10.7500k    4.3000k  100.0000x
+  v drop     1.2414     1.2429     4.2726     4.2548     4.2311   -83.5513a
+  current   99.3094u   99.4348u  198.7266u  395.7975u  983.9846u -8.355e-25
+  power    123.2795u  123.5909u  849.0834u    1.6840m    4.1634m    0.     
+
+
+ **** voltage-controlled voltage sources
+
+
+ subckt                        
+ element  0:e3       0:e4      
+  volts    -97.8741u  -97.8741u
+  current  8.355e-25   -2.3408n
+
+
+
+
+ **** bipolar junction transistors
+
+
+ subckt                                                                    
+ element  0:q1       0:q2       0:q3       0:q4       0:q5       0:q6      
+ model    0:bc107n   0:bc107n   0:bc107n   0:bc107n   0:bc107n   0:bc107n  
+  ib         2.3427n    2.3472n  482.5995n  483.5185n  983.7939n  983.7939n
+  ic       480.2551n  481.1696n   98.2871u   98.4727u  197.7258u  196.7590u
+  vbe      572.0990m  572.1479m  709.0301m  709.0791m  727.3787m  727.3787m
+  vce        3.0722     3.0721     2.5399     2.5383     1.2188   727.3787m
+  vbc       -2.5001    -2.5000    -1.8308    -1.8292  -491.3942m    0.     
+  vs        -5.0000    -5.0000    -3.7586    -3.7571    -1.2188  -727.3787m
+  power      1.4768u    1.4796u  249.9775u  250.2953u  241.6985u  143.8339u
+  betad    205.0002   205.0000   203.6618   203.6585   200.9830   200.0002 
+  gm        18.6882u   18.7238u    3.8246m    3.8319m    7.6941m    7.6565m
+  rpi       10.9667x   10.9459x   53.2364k   53.1352k   26.1151k   26.1151k
+  rx       100.0000   100.0000   100.0000   100.0000   100.0000   100.0000 
+  ro       213.4284x  213.0226x    1.0361x    1.0341x  508.2365k  508.2365k
+  cpi        3.7608p    3.7609p    5.0835p    5.0858p    6.2688p    6.2575p
+  cmu        1.2327p    1.2328p    1.3302p    1.3305p    1.6936p    1.9999p
+  cbx        0.         0.         0.         0.         0.         0.     
+  ccs      722.3151f  722.3151f  815.7146f  815.8563f    1.2344p    1.4250p
+  betaac   204.9488   204.9486   203.6104   203.6071   200.9316   199.9488 
+  ft       595.6355k  596.7593k   94.9074x   95.0495x  153.7922x  147.5713x
+
+
+
+ subckt                                                                    
+ element  0:q7       0:q8       0:q9       0:q10      0:q11      0:q17     
+ model    0:bc107n   0:bc107n   0:bc107n   0:bc107p   0:bc107p   0:bc107n  
+  ib         1.9594u  962.0969n    1.0224u   -3.7195u   -3.7195u    1.9594u
+  ic       400.8334u  193.4139u  205.4351u -185.9749u -186.0916u  391.8787u
+  vbe      745.1773m  726.8036m  728.3704m -726.2040m -726.2040m  745.1773m
+  vce        3.0303     1.2435     1.1996  -726.2040m -770.1265m  745.1773m
+  vbc       -2.2851  -516.7306m -471.2412m    0.        43.9225m    0.     
+  vs        -3.0303    -4.2738    -4.2299    -4.2742    -4.2742  -745.1773m
+  power      1.2161m  241.2160u  247.1870u  137.7568u  146.0152u  293.4792u
+  betad    204.5706   201.0337   200.9427    50.0003    50.0316   200.0004 
+  gm        15.5977m    7.5263m    7.9941m    7.2360m    7.2406m   15.2491m
+  rpi       13.1122k   26.7040k   25.1300k    6.9074k    6.9074k   13.1122k
+  rx       100.0000   100.0000   100.0000   100.0000   100.0000   100.0000 
+  ro       255.1815k  519.6982k  489.0660k  376.3969k  376.3969k  255.1815k
+  cpi        8.6639p    6.2177p    6.3602p    6.1297p    6.1311p    8.5593p
+  cmu        1.2609p    1.6823p    1.7027p    1.9997p    1.9625p    1.9998p
+  cbx        0.         0.         0.         0.         0.         0.     
+  ccs      890.8400f  772.7600f  776.1604f  772.7314f  772.7314f    1.4165p
+  betaac   204.5192   200.9823   200.8913    49.9819    50.0133   199.9490 
+  ft       250.1272x  151.6258x  157.7970x  141.6650x  142.3814x  229.8462x
+
+
+
+ subckt                                   
+ element  0:q14      0:q15      0:q16     
+ model    0:bc107p   0:bc107n   0:bc107n  
+  ib       -19.3435u    4.8712u    4.8712u
+  ic      -991.1067u  991.1067u  974.2422u
+  vbe     -770.1265m  768.8661m  768.8661m
+  vce       -2.5001     2.4999   768.8661m
+  vbc        1.7300    -1.7310     0.     
+  vs        -4.2318    -2.4999  -768.8661m
+  power      2.4928m    2.4814m  752.8071u
+  betad     51.2371   203.4630   200.0010 
+  gm        38.5629m   38.5670m   37.9105m
+  rpi        1.3282k    5.2742k    5.2742k
+  rx       100.0000   100.0000   100.0000 
+  ro        72.3756k  102.6444k  102.6444k
+  cpi       15.5870p   15.5873p   15.3903p
+  cmu        1.3475p    1.3475p    1.9996p
+  cbx        0.         0.         0.     
+  ccs      776.0097f  960.7834f    1.4054p
+  betaac    51.2187   203.4117   199.9496 
+  ft       362.4243x  362.4558x  346.9626x
+
+
+
+
+          ***** job concluded
+1****** HSPICE -- D-2010.03-SP1 32-BIT (May 26 2010) winnt ******               
+ ******  
+ project:phase1
+
+  ******  job statistics summary tnom=  25.000 temp=  25.000 *****
+
+  ******  HSPICE Threads Information  ******
+
+  Command Line Threads Count                  :     1
+  Available CPU Count                         :     8
+  Actual Model Evaluation(Load) Threads Count :     1
+  Actual Solver Threads Count                 :     1
+
+
+  ******  Circuit Statistics  ******
+  # nodes       =      37 # elements   =      30
+  # resistors   =       6 # capacitors =       1 # inductors   =       0
+  # mutual_inds =       0 # vccs       =       0 # vcvs        =       2
+  # cccs        =       0 # ccvs       =       0 # volt_srcs   =       6
+  # curr_srcs   =       0 # diodes     =       0 # bjts        =      15
+  # jfets       =       0 # mosfets    =       0 # U elements  =       0
+  # T elements  =       0 # W elements =       0 # B elements  =       0
+  # S elements  =       0 # P elements =       0 # va device   =       0
+
+
+  ******  Runtime Statistics (seconds)  ******
+
+  analysis           time    # points   tot. iter  conv.iter
+  op point           0.01           1          16
+  transient          0.05          21         152          75 rev=        12
+  readin             0.06
+  errchk             0.01
+  setup              0.02
+  output             0.00
+
+
+           total memory used          189  kbytes
+           total cpu time            0.17 seconds
+           total elapsed time        0.23 seconds
+           job started at     17:51:35 02/04/2020
+           job ended   at     17:51:35 02/04/2020
+
+
+  lic: Release hspice token(s) 
